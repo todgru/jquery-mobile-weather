@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Good Weather</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+</head>
+
+<body>
+
+  <div data-role="page">
+
+    <div data-role='panel' id="menu" data-theme="c">
+      <ul data-role="listview" data-theme="d" >
+        <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
+        <li data-role="list-divider">Select a city:</li>
+        <li><a href="#" class="city" data-rel="close">Current Location</a></li>
+        <li><a href="#" class="city" data-rel="close">Seattle, WA</a></li>
+        <li><a href="#" class="city" data-rel="close">Depoe Bay, OR</a></li>
+        <li><a href="#" class="city" data-rel="close">Rachel, NV</a></li>
+      </ul>
+    </div>
+
+    <div data-role="header" class="ui-content" data-postion="fixed" data-theme="c" >
+      <h1>Good Weather</h1>
+      <a href="#menu" class="ui-btn ui-btn-inline ui-btn-mini">Menu</a>
+    </div>
+
+    <div role="main" class="ui-content content">
+      <h1 class="icon" data-icon="B" id="current_temp">65&#176</h1>
+      <p id="current_summary">Partly Cloudy</p>
+      <p id="current_location">Current Location</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
