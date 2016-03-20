@@ -1,7 +1,7 @@
 //
 // Constants
+// `const apiKey` should be defined in a file called `api-key.js`
 //
-const apiKey = "";
 const forecastURL = "https://api.forecast.io/forecast";
 
 // Weather icons
