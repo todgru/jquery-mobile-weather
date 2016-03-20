@@ -1,13 +1,18 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
   <title>Good Weather</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <link rel="apple-touch-icon" href="images/icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
   <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+  <script src="js/script.js"></script>
 
 </head>
 
@@ -32,9 +37,10 @@
     </div>
 
     <div role="main" class="ui-content content">
-      <h1 class="icon" data-icon="B" id="current_temp">65&#176</h1>
-      <p id="current_summary">Partly Cloudy</p>
-      <p id="current_location">Current Location</p>
+      <h1><foo class="icon" data-icon="B" id="current_temp"></foo>&#176F</h1>
+      <p> Humidity: <foo id="humidity"></foo>%</p>
+      <p> Current Conditions: <foo id="summary"></foo></p>
+      <p id="location">Current Location</p>
     </div>
 
   </div>
